@@ -2,8 +2,11 @@ import numpy as np
 import pandas as pd
 import pandas_datareader as pdr
 import datetime as datetime
+import twstock
 
 stock = int(input("what stock would you like to check: "))
+print(twstock.codes[str(stock)])
+
 time = int(input("From how many days before would you like to check or type 0 to skip: "))
 
 def getDate(n):
